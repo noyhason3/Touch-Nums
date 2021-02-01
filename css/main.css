@@ -1,0 +1,126 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5;
+}
+
+.app-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.toolbar {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  box-shadow: inset 0 1px #fff, 0 1px 3px rgba(34, 25, 25, 0.4);
+  text-align: center;
+  width: 100%;
+}
+
+.content-container {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.game-container {
+  height: 100%;
+  width: 50%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.board-container {
+  height: 80%;
+  width: 80%;
+}
+
+.board {
+  background-position: center;
+  padding: 1rem;
+  height: 100%;
+  width: 100%;
+  box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+}
+
+td {
+  padding: 15px;
+  margin-right: 10px;
+  text-align: center;
+  border-radius: 3px;
+  font-size: 30px;
+}
+
+td:hover {
+  background-color: #15a2fa48;
+}
+
+.timer-container {
+  margin-left: 100px;
+  margin-top: 40px;
+  font-size: 20px;
+  width: 100px;
+  background: linear-gradient(45deg, #0673e788 30%, #15a2fa50 90%);
+  border-radius: 3px;
+}
+
+.modal {
+  display: flex;
+  position: fixed;
+  left: 300px;
+  top: 400px;
+  font-size: 20px;
+  border-radius: 2px;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(45deg, #0673e788 30%, #15a2fa50 90%);
+  width: 100px;
+  height: 60px;
+  text-align: center;
+  border-radius: 3px;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+
+}
+
+h1 {
+  margin: 5px;
+  padding: 5px;
+}
+
+
+.level {
+  margin: 20px;
+  font-size: 18px;
+}
+
+
+button{
+  background: linear-gradient(45deg, #0673e7b6 30%, #15a2faa2 90%);
+  border: 0;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px 2px #00000062;
+}
+
+.cell-right {
+  background-color: inherit;
+  background: linear-gradient(45deg, #49a09d98, #6990d8);
+}
+
+.levels {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-bottom: 5px;
+}
